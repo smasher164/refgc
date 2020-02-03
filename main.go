@@ -241,26 +241,26 @@ type node struct {
 
 	value token
 
-	// kfile			list of statements
-	// kassignstmt		lhs expression, rhs expression
-	// kblockstmt		list of statements
-	// kifstmt			cond expression, block statement, else statement
+	// kfile            list of statements
+	// kassignstmt      lhs expression, rhs expression
+	// kblockstmt       list of statements
+	// kifstmt          cond expression, block statement, else statement
 	// kemptystmt
-	// kexprstmt		expression
-	// kwhilestmt		cond expression, block statement
-	// kreturnstmt		expression
-	// karraylit		list of kkvexpr
+	// kexprstmt        expression
+	// kwhilestmt       cond expression, block statement
+	// kreturnstmt      expression
+	// karraylit        list of kkvexpr
 	// knumlit
 	// kstringlit
-	// kfunclit			list of parameters (ident expressions), block
+	// kfunclit         list of parameters (ident expressions), block
 	// kident
-	// kunaryexpr		expression
-	// kbinaryexpr		X expression, op token, Y expression
-	// kindexexpr		X expression, index expression
-	// kselectorexpr	X expression, sel ident (expression)
-	// kkvexpr			key expression, value expression
-	// kparenexpr		X expression
-	// kcallexpr		func expression, list of arg expressions
+	// kunaryexpr       expression
+	// kbinaryexpr      X expression, op token, Y expression
+	// kindexexpr       X expression, index expression
+	// kselectorexpr    X expression, sel ident (expression)
+	// kkvexpr          key expression, value expression
+	// kparenexpr       X expression
+	// kcallexpr        func expression, list of arg expressions
 	list []*node
 }
 
