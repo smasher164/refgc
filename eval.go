@@ -215,6 +215,12 @@ func (interp *interp) evalRvalue(nod *node) value {
 	case kfunclit:
 		return value{typ: vfunc, v: nod}
 	case kident:
+		switch nod.value.text {
+		case "true":
+			return value{typ: vbool, v: true}
+		case "false":
+			return value{typ: vbool, v: false}
+		}
 		if e := interp.env.lookup(nod.value.text); e != nil {
 			return e.m[nod.value.text]
 		}
